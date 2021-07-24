@@ -20,3 +20,54 @@
     text-align: center;
   }
 }
+
+.about-us {
+  min-height: 90vh;
+  @include flexLayout;
+
+  &-left {
+    width: 40%;
+    img {
+      width: 100%;
+      opacity: 0.7;
+    }
+  }
+
+  &-right {
+    width: 60%;
+    @include flexLayout;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 100px;
+    box-sizing: border-box;
+
+    .main-heading {
+      font-size: 60px;
+    }
+
+    .sub-heading {
+      font-size: 40px;
+    }
+
+    .stars {
+      margin: 30px 0;
+    }
+
+    .star {
+      font-size: 15px;
+      color: $color-primary;
+      margin-left: 10px;
+    }
+
+    .description {
+      font-family: $font-Nastaliq;
+      font-size: 25px;
+      color: $color-secondary;
+      direction: rtl;
+      text-align: justify;
+      &::first-letter {
+        padding-right: 20px;
+      }
+    }
+  }
+}
