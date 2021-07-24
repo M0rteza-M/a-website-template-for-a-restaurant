@@ -1,0 +1,114 @@
+@font-face {
+  font-family: Sahel;
+  src: url("../fonts/Sahel.eot");
+  src: url("../fonts/Sahel-Black.ttf") format("ttf"), url("../fonts/Sahel.woff") format("woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Nastaliq;
+  src: url("../fonts/IranNastaliq.ttf");
+  font-weight: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #262626;
+}
+
+.logo {
+  position: relative;
+  font-size: 70px;
+  color: #d3ab55;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  height: 110px;
+  margin-right: 20px;
+  border: 3px solid #d3ab55;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.main-name {
+  font-family: Sahel, Tahoma;
+  font-size: 50px;
+  color: #bbb;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.sub-name {
+  font-family: Sahel, Tahoma;
+  font-size: 18px;
+  color: #bbb;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.main-heading {
+  font-family: Nastaliq, Tahoma;
+  font-size: 100px;
+  font-weight: 300;
+  color: #d3ab55;
+  margin-bottom: 20px;
+}
+
+.sub-heading {
+  font-family: Sahel, Tahoma;
+  font-size: 60px;
+  font-weight: 300;
+  color: #bbb;
+  margin-bottom: 40px;
+}
+
+.main-btn {
+  width: 170px;
+  height: 45px;
+  font-family: Sahel, Tahoma;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #d3ab55;
+  background-color: transparent;
+  border: 1px solid #d3ab55;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: all 0.4s;
+}
+
+.main-btn:hover {
+  color: #262626;
+  background-color: #d3ab55;
+}
+
+.header {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url("../images/bg.jpeg") center no-repeat;
+  background-size: cover;
+}
+
+.header .brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.header-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */
