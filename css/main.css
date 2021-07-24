@@ -111,4 +111,61 @@ body {
   flex-direction: column;
   text-align: center;
 }
+
+.about-us {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us-left {
+  width: 40%;
+}
+
+.about-us-left img {
+  width: 100%;
+  opacity: 0.7;
+}
+
+.about-us-right {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 100px;
+  box-sizing: border-box;
+}
+
+.about-us-right .main-heading {
+  font-size: 60px;
+}
+
+.about-us-right .sub-heading {
+  font-size: 40px;
+}
+
+.about-us-right .stars {
+  margin: 30px 0;
+}
+
+.about-us-right .star {
+  font-size: 15px;
+  color: #d3ab55;
+  margin-left: 10px;
+}
+
+.about-us-right .description {
+  font-family: Nastaliq, Tahoma;
+  font-size: 25px;
+  color: #bbb;
+  direction: rtl;
+  text-align: justify;
+}
+
+.about-us-right .description::first-letter {
+  padding-right: 20px;
+}
 /*# sourceMappingURL=main.css.map */
