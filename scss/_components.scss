@@ -63,3 +63,59 @@
     background-color: $color-primary;
   }
 }
+
+.card {
+  width: 33.3333%;
+  height: 30vw;
+  position: relative;
+  overflow: hidden;
+
+  &:hover .card-overlay {
+    left: 0;
+  }
+
+  &-overlay {
+    @extend %fullSpace;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    @include flexLayout;
+    flex-direction: column;
+    color: $color-white;
+    background-color: rgba($color-primary, 0.6);
+    z-index: 1;
+    transition: left 0.5s;
+
+    &-heading {
+      font-family: $font-Nastaliq;
+      font-size: 50px;
+      @include textStyles;
+    }
+
+    &-paragraph {
+      font-family: $font-sahel;
+      font-size: 30px;
+      margin-bottom: 30px;
+      @include textStyles;
+    }
+
+    &-btn {
+      width: 150px;
+      height: 40px;
+      color: $color-primary;
+      background-color: $color-white;
+      font-family: $font-sahel;
+      font-size: 14px;
+      border: 1px solid $color-primary;
+      border-radius: 30px;
+      cursor: pointer;
+      outline: none;
+    }
+  }
+
+  &-img {
+    @extend %fullSpace;
+    object-fit: cover;
+    opacity: 0.5;
+  }
+}

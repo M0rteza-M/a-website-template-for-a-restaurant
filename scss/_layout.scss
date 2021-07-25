@@ -71,3 +71,10 @@
     }
   }
 }
+
+.gallery {
+  .cards-wrapper {
+    @include flexLayout;
+    flex-wrap: wrap;
+  }
+}
