@@ -8,6 +8,7 @@ $font-josefinSans: "Josefin Sans", sans-serif;
 $font-nunito: "Nunito", sans-serif;
 $font-sahel: Sahel, Tahoma;
 $font-Nastaliq: Nastaliq, Tahoma;
+$color-white: #fff;
 
 @font-face {
   font-family: Sahel;
@@ -32,7 +33,6 @@ $font-Nastaliq: Nastaliq, Tahoma;
 @mixin textStyles {
   font-weight: 300;
   letter-spacing: 2px;
-  text-transform: uppercase;
 }
 
 @mixin centering($topValue) {
@@ -40,6 +40,11 @@ $font-Nastaliq: Nastaliq, Tahoma;
   top: $topValue;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+%fullSpace {
+  width: 100%;
+  height: 100%;
 }
 
 * {
