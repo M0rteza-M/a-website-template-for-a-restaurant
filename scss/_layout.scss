@@ -78,3 +78,43 @@
     flex-wrap: wrap;
   }
 }
+
+.footer {
+  padding: 70px 0;
+  @include flexLayout;
+  flex-direction: column;
+
+  &-header {
+    @include flexLayout;
+    margin-bottom: 70px;
+  }
+
+  &-social-media {
+    @include flexLayout;
+    width: 300px;
+    justify-content: space-between;
+    margin-bottom: 70px;
+
+    .social-media-item {
+      list-style: none;
+    }
+
+    .social-media-link {
+      text-decoration: none;
+      font-size: 50px;
+      color: $color-secondary;
+      transition: color 0.7s;
+
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+
+  &-copyright-paragraph {
+    font-family: $font-sahel;
+    font-size: 20px;
+    color: $color-secondary;
+    direction: rtl;
+  }
+}
