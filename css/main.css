@@ -34,6 +34,20 @@ body {
   z-index: 2;
 }
 
+@media (max-width: 800px) {
+  .hamburger-menu {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 500px) {
+  .hamburger-menu {
+    width: 25px;
+    height: 25px;
+  }
+}
+
 .hamburger-menu .menu {
   display: flex;
   flex-direction: column;
@@ -48,6 +62,18 @@ body {
   background-color: #d3ab55;
   transition: all 0.5s 0.5s;
   transform-origin: right;
+}
+
+@media (max-width: 800px) {
+  .hamburger-menu .menu-line {
+    height: 3px;
+  }
+}
+
+@media (max-width: 800px) {
+  .hamburger-menu .menu-line {
+    height: 2px;
+  }
 }
 
 .logo {
@@ -65,12 +91,41 @@ body {
   text-decoration: none;
 }
 
+@media (max-width: 1000px) {
+  .logo {
+    font-size: 50px;
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 500px) {
+  .logo {
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #d3ab55;
+  }
+}
+
 .main-name {
   font-family: Sahel, Tahoma;
   font-size: 50px;
   color: #bbb;
   font-weight: 300;
   letter-spacing: 2px;
+}
+
+@media (max-width: 1000px) {
+  .main-name {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .main-name {
+    font-size: 25px;
+  }
 }
 
 .sub-name {
@@ -82,6 +137,12 @@ body {
   letter-spacing: 2px;
 }
 
+@media (max-width: 400px) {
+  .sub-name {
+    font-size: 10px;
+  }
+}
+
 .main-heading {
   font-family: Nastaliq, Tahoma;
   font-size: 100px;
@@ -90,12 +151,54 @@ body {
   margin-bottom: 20px;
 }
 
+@media (max-width: 1600px) {
+  .main-heading {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .main-heading {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 400px) {
+  .main-heading {
+    font-size: 40px;
+  }
+}
+
 .sub-heading {
   font-family: Sahel, Tahoma;
   font-size: 60px;
   font-weight: 300;
   color: #bbb;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 1600px) {
+  .sub-heading {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .sub-heading {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .sub-heading {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .sub-heading {
+    font-size: 20px;
+  }
 }
 
 .main-btn {
@@ -116,6 +219,22 @@ body {
 .main-btn:hover {
   color: #262626;
   background-color: #d3ab55;
+}
+
+@media (max-width: 800px) {
+  .main-btn {
+    width: 150px;
+    height: 35px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  .main-btn {
+    width: 130px;
+    height: 30px;
+    font-size: 10px;
+  }
 }
 
 .card {
@@ -150,12 +269,48 @@ body {
   letter-spacing: 2px;
 }
 
+@media (max-width: 900px) {
+  .card-overlay-heading {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 600px) {
+  .card-overlay-heading {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 500px) {
+  .card-overlay-heading {
+    display: none;
+  }
+}
+
 .card-overlay-paragraph {
   font-family: Sahel, Tahoma;
   font-size: 30px;
   margin-bottom: 30px;
   font-weight: 300;
   letter-spacing: 2px;
+}
+
+@media (max-width: 900px) {
+  .card-overlay-paragraph {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .card-overlay-paragraph {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .card-overlay-paragraph {
+    display: none;
+  }
 }
 
 .card-overlay-btn {
@@ -169,6 +324,28 @@ body {
   border-radius: 30px;
   cursor: pointer;
   outline: none;
+}
+
+@media (max-width: 900px) {
+  .card-overlay-btn {
+    font-size: 12px;
+    width: 130px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 900px) {
+  .card-overlay-btn {
+    font-size: 10px;
+    width: 100px;
+  }
+}
+
+@media (max-width: 500px) {
+  .card-overlay-btn {
+    font-size: 10px;
+    width: 90px;
+  }
 }
 
 .card-img {
@@ -194,6 +371,12 @@ body {
   transition: left 0.8s cubic-bezier(1, 0, 0, 1);
 }
 
+@media (max-width: 800px) {
+  .navbar-navigation-left {
+    display: none;
+  }
+}
+
 .navbar-navigation .left-img {
   width: 50%;
   position: absolute;
@@ -202,9 +385,27 @@ body {
   border-radius: 10px;
 }
 
+@media (max-width: 1300px) {
+  .navbar-navigation .left-img {
+    width: 55%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .navbar-navigation .left-img {
+    width: 65%;
+  }
+}
+
 .navbar-navigation .left-img-1 {
   top: 15%;
   left: 15%;
+}
+
+@media (max-width: 1000px) {
+  .navbar-navigation .left-img-1 {
+    left: 5%;
+  }
 }
 
 .navbar-navigation .left-img-2 {
@@ -212,9 +413,21 @@ body {
   left: 25%;
 }
 
+@media (max-width: 1000px) {
+  .navbar-navigation .left-img-2 {
+    left: 15%;
+  }
+}
+
 .navbar-navigation .left-img-3 {
   top: 55%;
   left: 35%;
+}
+
+@media (max-width: 1000px) {
+  .navbar-navigation .left-img-3 {
+    left: 25%;
+  }
 }
 
 .navbar-navigation-right {
@@ -230,6 +443,13 @@ body {
   flex-direction: column;
 }
 
+@media (max-width: 800px) {
+  .navbar-navigation-right {
+    width: 100vw;
+    right: -100vw;
+  }
+}
+
 .navbar-navigation .nav-list-item {
   list-style: none;
 }
@@ -243,9 +463,21 @@ body {
   transition: all 0.5s;
 }
 
+@media (max-width: 600px) {
+  .navbar-navigation .nav-list-link {
+    font-size: 30px;
+  }
+}
+
 .navbar-navigation .nav-list-link:hover {
   color: #d3ab55;
   font-size: 45px;
+}
+
+@media (max-width: 600px) {
+  .navbar-navigation .nav-list-link:hover {
+    font-size: 35px;
+  }
 }
 
 .checkbox:checked ~ .navbar-navigation .navbar-navigation-left {
@@ -277,6 +509,10 @@ body {
   min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url("../images/bg.jpeg") center no-repeat;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .header .brand {
@@ -301,6 +537,12 @@ body {
   align-items: center;
 }
 
+@media (max-width: 800px) {
+  .about-us {
+    min-height: 70vh;
+  }
+}
+
 .about-us-left {
   width: 40%;
 }
@@ -308,6 +550,12 @@ body {
 .about-us-left img {
   width: 100%;
   opacity: 0.7;
+}
+
+@media (max-width: 800px) {
+  .about-us-left {
+    display: none;
+  }
 }
 
 .about-us-right {
@@ -321,22 +569,82 @@ body {
   box-sizing: border-box;
 }
 
+@media (max-width: 1300px) {
+  .about-us-right {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 800px) {
+  .about-us-right {
+    width: 100%;
+  }
+}
+
 .about-us-right .main-heading {
   font-size: 60px;
+}
+
+@media (max-width: 1300px) {
+  .about-us-right .main-heading {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .about-us-right .main-heading {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 400px) {
+  .about-us-right .main-heading {
+    font-size: 30px;
+  }
 }
 
 .about-us-right .sub-heading {
   font-size: 40px;
 }
 
+@media (max-width: 1300px) {
+  .about-us-right .sub-heading {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .about-us-right .sub-heading {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 400px) {
+  .about-us-right .sub-heading {
+    font-size: 20px;
+  }
+}
+
 .about-us-right .stars {
   margin: 30px 0;
+}
+
+@media (max-width: 1000px) {
+  .about-us-right .stars {
+    margin: 15px 0;
+  }
 }
 
 .about-us-right .star {
   font-size: 15px;
   color: #d3ab55;
   margin-left: 10px;
+}
+
+@media (max-width: 1000px) {
+  .about-us-right .star {
+    font-size: 12px;
+  }
 }
 
 .about-us-right .description {
@@ -349,6 +657,12 @@ body {
 
 .about-us-right .description::first-letter {
   padding-right: 20px;
+}
+
+@media (max-width: 1600px) {
+  .about-us-right .description {
+    font-size: 20px;
+  }
 }
 
 .gallery .cards-wrapper {
@@ -364,6 +678,12 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+@media (max-width: 500px) {
+  .footer {
+    padding: 40px 0;
+  }
 }
 
 .footer-header {
@@ -382,6 +702,13 @@ body {
   margin-bottom: 70px;
 }
 
+@media (max-width: 500px) {
+  .footer-social-media {
+    width: 200px;
+    margin-bottom: 50px;
+  }
+}
+
 .footer-social-media .social-media-item {
   list-style: none;
 }
@@ -397,10 +724,30 @@ body {
   color: #d3ab55;
 }
 
+@media (max-width: 1000px) {
+  .footer-social-media .social-media-link {
+    font-size: 35px;
+  }
+}
+
 .footer-copyright-paragraph {
   font-family: Sahel, Tahoma;
   font-size: 20px;
   color: #bbb;
   direction: rtl;
+}
+
+@media (max-width: 800px) {
+  .footer-copyright-paragraph {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer-copyright-paragraph {
+    font-size: 14px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
